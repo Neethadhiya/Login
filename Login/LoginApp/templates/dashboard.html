@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a href="{% url 'user_logout' %}" style="float: right;">Logout</a>
+        </div>
+    </nav>
+  <div class="alert alert-success" role="alert">
+    {% if user.is_authenticated %}
+    <h4>You are logged in as {{user.username}}</h4>
+    {% endif %}
+  </div>
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="img-fluid" alt="Sample image">
+            </div>
+            
+          <!-- Copyright -->
+      
+          <!-- Right -->
+        
+          <!-- Right -->
+        </div>
+        </div>
+      </section>
+</body>
+</html>
